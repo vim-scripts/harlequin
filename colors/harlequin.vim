@@ -92,6 +92,8 @@ call s:HI('Function',        {'guifg': s:gold})
 call s:HI('Identifier',      {'guifg': s:gold})
 
 call s:HI('Comment',         {'guifg': s:frost})
+call s:HI('CommentEmail',    {'guifg': s:frost, 'gui': 'underline'})
+call s:HI('CommentUrl',      {'guifg': s:frost, 'gui': 'underline'})
 call s:HI('SpecialComment',  {'guifg': s:frost, 'gui': 'bold'})
 call s:HI('Todo',            {'guifg': s:frost, 'gui': 'bold'})
 
@@ -171,6 +173,32 @@ call s:HI('pythonDecorator',     {'guifg': s:cerise})
 call s:HI('pythonException',     {'guifg': s:lime, 'gui': 'bold'})
 call s:HI('pythonExceptions',    {'guifg': s:lime})
 
+"*** RUBY ***
+call s:HI('rubyModule',            {'guifg': s:lime})
+call s:HI('rubyModuleNameTag',     {'guifg': s:text})
+call s:HI('rubyPseudoVariable',    {'guifg': s:text})
+call s:HI('rubyClass',             {'guifg': s:cerise})
+call s:HI('rubyClassNameTag',      {'guifg': s:gold})
+call s:HI('rubyDefine',            {'guifg': s:cerise})
+call s:HI('rubyConstant',          {'guifg': s:text})
+call s:HI('rubyStringDelimiter',   {'guifg': s:sunny})
+call s:HI('rubyInterpolation',     {'guifg': s:lilac})
+call s:HI('rubyInterpolationDelimiter',     {'guifg': s:lilac})
+
+"*** CLOJURE ***
+call s:HI('clojureDefine',         {'guifg': s:cerise})
+call s:HI('clojureSpecial',        {'guifg': s:cerise})
+call s:HI('clojureCond',           {'guifg': s:cerise})
+call s:HI('clojureParen0',         {'guifg': s:text})
+call s:HI('clojureMacro',          {'guifg': s:lime, 'gui': 'bold'})
+call s:HI('clojureDispatch',       {'guifg': s:lilac, 'gui': 'bold'})
+
+"*** VIMSCRIPT ***
+call s:HI('vimCommentTitle',       {'guifg': s:frost, 'gui': 'bold'})
+call s:HI('vimParenSep',           {'guifg': s:text})
+call s:HI('vimSep',                {'guifg': s:text})
+call s:HI('vimOper',               {'guifg': s:text})
+
 "*** XML ***
 call s:HI('xmlProcessingDelim',       {'guifg': s:brick})
 call s:HI('xmlNamespace',             {'guifg': s:gold})
@@ -189,6 +217,7 @@ call s:HI('htmlTagN',                 {'guifg': s:gold})
 call s:HI('htmlH1',                   {'gui': 'bold'})
 call s:HI('htmlH2',                   {'gui': 'bold'})
 call s:HI('htmlH3',                   {'gui': 'italic'})
+call s:HI('htmlH4',                   {'gui': 'italic'})
 call s:HI('htmlTagN',                 {'guifg': s:gold})
 call s:HI('htmlScriptTag',            {'guifg': s:lime})
 
@@ -199,3 +228,7 @@ call s:HI('MBEVisibleActive',          {'guifg': s:frost, 'gui': 'bold'})
 call s:HI('MBEChanged',                {'guifg': s:greys[1], 'gui': 'italic'})
 call s:HI('MBEVisibleChanged',         {'guifg': s:white, 'gui': 'bold,italic'})
 call s:HI('MBEVisibleChangedActive',   {'guifg': s:frost, 'gui': 'bold,italic'})
+
+"*** vim-easymotion ***
+call s:HI('EasyMotionTarget',          {'guifg': s:cerise, 'gui': 'bold'})
+call s:HI('EasyMotionShade',           {'guifg': s:greys[2]})
