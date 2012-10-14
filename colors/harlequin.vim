@@ -152,11 +152,11 @@ call s:HI('Pmenu',           {'guibg': s:greys[5]})
 call s:HI('Pmenu',           {'guifg': '#66D9EF'})
 
 call s:HIx('DiffDelete',     {'guifg': s:auburn, 'guibg': s:auburn})
-call s:HIx('DiffText',       {'guibg': s:greys[3], 'gui': 'bold'})
+call s:HIx('DiffText',       {'guibg': s:greys[3]})
 call s:HIx('DiffChange',     {'guibg': s:greys[4]})
 call s:HIx('DiffAdd',        {'guibg': s:moss})
 
-call s:HI('Underlined',      {'gui': 'underline'})
+call s:HIx('Underlined',     {'gui': 'underline'})
 
 call s:HI('Directory',       {'guifg': s:lime})
 call s:HI('Question',        {'guifg': s:lime})
@@ -185,6 +185,16 @@ call s:HI('rubyStringDelimiter',   {'guifg': s:sunny})
 call s:HI('rubyInterpolation',     {'guifg': s:lilac})
 call s:HI('rubyInterpolationDelimiter',     {'guifg': s:lilac})
 
+"*** JAVASCRIPT ***
+call s:HI('javaScriptNull',        {'guifg': s:lilac, 'gui': 'bold'})
+call s:HI('javaScriptNumber',      {'guifg': s:lilac, 'gui': 'bold'})
+call s:HI('javaScriptFunction',    {'guifg': s:cerise})
+call s:HI('javaScriptOperator',    {'guifg': s:cerise, 'gui': 'bold'})
+call s:HI('javaScriptBraces',      {'guifg': s:text})
+call s:HI('javaScriptIdentifier',  {'guifg': s:brick})
+call s:HI('javaScriptMember',      {'guifg': s:gold})
+call s:HI('javaScriptType',        {'guifg': s:gold})
+
 "*** CLOJURE ***
 call s:HI('clojureDefine',         {'guifg': s:cerise})
 call s:HI('clojureSpecial',        {'guifg': s:cerise})
@@ -192,6 +202,10 @@ call s:HI('clojureCond',           {'guifg': s:cerise})
 call s:HI('clojureParen0',         {'guifg': s:text})
 call s:HI('clojureMacro',          {'guifg': s:lime, 'gui': 'bold'})
 call s:HI('clojureDispatch',       {'guifg': s:lilac, 'gui': 'bold'})
+
+"*** SCALA ***
+call s:HI('scalaClassName',        {'guifg': s:gold})
+call s:HI('scalaConstructor',      {'guifg': s:text})
 
 "*** VIMSCRIPT ***
 call s:HI('vimCommentTitle',       {'guifg': s:frost, 'gui': 'bold'})
@@ -214,12 +228,33 @@ call s:HI('xmlEntityPunct',           {'guifg': s:lilac})
 call s:HI('htmlTagName',              {'guifg': s:gold})
 call s:HI('htmlTag',                  {'guifg': s:gold})
 call s:HI('htmlTagN',                 {'guifg': s:gold})
+call s:HI('htmlEvent',                {'guifg': s:brick})
+call s:HI('htmlEventDQ',              {'guifg': s:lime})
 call s:HI('htmlH1',                   {'gui': 'bold'})
 call s:HI('htmlH2',                   {'gui': 'bold'})
 call s:HI('htmlH3',                   {'gui': 'italic'})
 call s:HI('htmlH4',                   {'gui': 'italic'})
-call s:HI('htmlTagN',                 {'guifg': s:gold})
 call s:HI('htmlScriptTag',            {'guifg': s:lime})
+
+"*** HTML/JAVASCRIPT ***
+call s:HI('javaScript',               {'guifg': s:text})
+
+"*** CSS ***
+call s:HI('cssSelectorOp',            {'guifg': s:text})
+call s:HI('cssSelectorOp2',           {'guifg': s:text})
+call s:HI('cssBraces',                {'guifg': s:text})
+call s:HI('cssPseudoClass',           {'guifg': s:lime})
+call s:HI('cssValueNumber',           {'guifg': s:lilac})
+call s:HI('cssValueLength',           {'guifg': s:lilac})
+call s:HI('cssColor',                 {'guifg': s:lilac})
+call s:HI('cssImportant',             {'guifg': s:lime, 'gui': 'bold'})
+call s:HI('cssCommonAttr',            {'guifg': s:lilac, 'gui': 'bold'})
+call s:HI('cssRenderAttr',            {'guifg': s:lilac, 'gui': 'bold'})
+call s:HI('cssBoxAttr',               {'guifg': s:lilac, 'gui': 'bold'})
+call s:HI('cssUIAttr',                {'guifg': s:lilac, 'gui': 'bold'})
+call s:HI('cssTextAttr',              {'guifg': s:lilac, 'gui': 'bold'})
+call s:HI('cssTableAttr',             {'guifg': s:lilac, 'gui': 'bold'})
+call s:HI('cssColorAttr',             {'guifg': s:lilac, 'gui': 'bold'})
 
 "*** minibufexpl ***
 call s:HI('MBENormal',                 {'guifg': s:greys[1]})
@@ -232,3 +267,7 @@ call s:HI('MBEVisibleChangedActive',   {'guifg': s:frost, 'gui': 'bold,italic'})
 "*** vim-easymotion ***
 call s:HI('EasyMotionTarget',          {'guifg': s:cerise, 'gui': 'bold'})
 call s:HI('EasyMotionShade',           {'guifg': s:greys[2]})
+
+"*** CtrlP ***
+call s:HI('CtrlPNoEntries',            {'guifg': s:mordant})
+call s:HI('CtrlPPrtBase',              {'gui': 'bold'})

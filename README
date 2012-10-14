@@ -22,5 +22,5 @@ Clojure: http://i.imgur.com/LoUNY.png
 
 Diffmode: http://i.imgur.com/7GlFM.png
 
-Languges supported: C, python, clojure, vimscript, xml, html, and ruby
-Plugins supported: minibufexplorer, vim-easymotion, vimdiff
+Languges supported: C, python, ruby, javascript, clojure, scala, vimscript, xml, html, and css
+Plugins supported: minibufexplorer, vim-easymotion, vimdiff, CtrlP
